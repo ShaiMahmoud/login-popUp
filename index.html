@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Cuda</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <style>
+         body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Cairo', sans-serif;
+}
+        #shadow {
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        display: none;
+        margin-top: -25px;
+        
+    }
+    .popUp {
+        width: 400px;
+        height: 400px;
+        background-color: pink;
+        margin: 0 auto;
+        display: none;
+        margin-top: 110px;
+    }
+   
+.container{
+    margin: 80px auto;
+    background: #eceef1;
+    width:600px;
+    height: auto;
+    border-radius: 8px;
+    display: none;
+}
+.mainBody{
+    padding: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+h1.loginTitle{
+    color: #4db3a5;
+}
+.loginForm{
+    width: 100%;
+    height: auto;;
+}
+.mainInput{
+    width: 100%;
+    height: 30px;
+    background: #dde3ec;
+    outline: 0px;
+    border: 0px;
+    padding:0px 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.mainInput:focus{
+    border:1px solid #4db3a5;
+}
+.submitBtn{
+    border:0px;
+    background:#26a69a;
+    color:white;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+} 
+.submitBtn:hover{
+    background:#18736a;
+    transition-duration: 0.4s;
+}
+.leftSide{
+    float:left;
+    width: 50%;
+    text-align: left;
+}
+.rightSide{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+a.forget{
+    color:black;
+    text-decoration: none;
+}
+a.forget:hover{
+    text-decoration:underline;
+}
+.clear{
+    clear: both;
+}
+.social{
+    width: 100%;
+    height: auto;
+    margin-top:20px;
+}
+.loginLabel{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.socialIcons{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+a.socialLink{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:40px;
+    display: inline-block;
+    color:white;
+}
+.gplus{
+    background: #e07b6f;
+}
+.fb{
+    background: #7a94b6;
+}
+.twitter{
+    background: #70ceee;
+}
+.loginFooter{
+     background: #6c7a8d;
+     height: 80px;
+     text-align: center;
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius:8px;
+     line-height: 80px;
+     color: #a7c0da;
+}
+.loginFooter a{
+    text-decoration: none;
+    color: #a7c0da;
+    text-transform: uppercase;
+}
+.loginFooter a:hover{
+    text-decoration: underline;
+}
+
+
+
+    
+    </style>
+</head>
+
+<body>
+<button class="click"> signe in </button>
+<div id="shadow">
+    <div class="container">
+        <div class="mainBody">
+            <h1 class="loginTitle">Login</h1>
+            <form class="loginForm" action="">
+                <input class="mainInput" type="text" placeholder="Enter your Name">
+                <input class="mainInput" type="email" placeholder="Enter your Email">
+                <input class="mainInput" type="password" placeholder="Enter your Password">
+                <div class="leftSide">
+                        <input class="submitBtn" type="submit" value="LOG IN">
+                        <input type="checkbox">
+                        <label for="">Remeber Me</label>
+                    </div>
+                <div class="rightSide">
+                    <a class="forget" href="##">Forgot Password</a>
+                </div> 
+                <div class="clear"></div>   
+            </form>
+            <div class="social">
+                <div class="loginLabel">
+                    <span>Login With:</span>
+                </div>
+                <div class="socialIcons">
+                    <a class="socialLink fb" href="##"><i class="fab fa-facebook-f"></i></a>
+                    <a class="socialLink gplus" href="##"><i class="fab fa-google-plus-g"></i></a>
+                    <a class="socialLink twitter" href="##"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+        </div>
+        <div class="loginFooter">
+            <a href="##">creat account</a>
+            |
+            <a href="##">email verification</a>
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
